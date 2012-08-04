@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <set name="WIDTH" value="640"/>
+  <set name="HEIGHT" value="480"/>
+
+  <haxedef name="fdb" if="target_flash" />
+
+  <app file="nme-gapless-mp3-example-mono"
+       title="NME Gapless MP3 Example Mono"
+       package="net.noiseinstitute.nme_gapless_mp3_example_mono"
+       version="0"
+       company="Daniel Cassidy"
+       main="nme_gapless_mp3_example.Mono"/>
+
+  <window width="${WIDTH}"
+          height="${HEIGHT}"
+          orientation="landscape"
+          fps="60"
+          background="0x000000"
+          resizable="true"
+          hardware="false"/>
+
+  <assets path="assets" include="*.mp3"/>
+
+  <classpath name="src"/>
+
+  <haxelib name="nme"/>
+
+  <ndll name="std"/>
+  <ndll name="nme" haxelib="nme"/>
+</project>
